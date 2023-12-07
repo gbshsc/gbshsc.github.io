@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Text color */
+    background-image: url("./img/quad.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    position: relative; /* Ensure body is positioned for z-index to work */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000; /* Dark color for the overlay */
+    opacity: 0; /* Initial opacity */
+    z-index: -1; /* Higher z-index to appear on top of the body content */
+    pointer-events: none; /* Allow interactions with underlying elements */
+}
+
+#down {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+  }
+
+.responsive {
+    font-size:5vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .responsive {
+        font-size:8vw;
+    }
+}
+.space { margin-top: 100px; }
+.space2 { margin-top: 500px; }
+
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: grey;
+  }
+  
+  ::selection {
+    color: white;
+    background: grey;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(104, 104, 104);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(56, 56, 56);  /* creates padding around scroll thumb */
+  }
