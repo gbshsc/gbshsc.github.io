@@ -4,71 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  
   <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-
-
-<nav class="bg-white border-gray-200 dark:bg-gray-900 navbar">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-2xl md:dark:hover:text-blue-500 whitespace-nowrap dark:text-white">GBSH SC</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="index.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">HOME</a>
-          </li>
-          <li>
-            <a href="about.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT</a>
-          </li>
-          <li>
-            <a href="projects.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PROJECTS</a>
-          </li>
-          <li>
-            <a href="education.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">EDUCATION</a>
-          </li>
-          <li>
-            <a href="contact.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
+<div id="nav-placeholder"></div>
+<div class="space3"></div>
 <div class="text-center container mx-auto px-30 py-40">
-  <p class="text-white responsive">The World's First Student Healthcare Consultancy</p>
+  <p class="text-white font-semibold responsive">The World's First</p>
+  <p class="text-white font-semibold responsive">Student Healthcare Consultancy</p>
 </div>
 <img src="img/down-arrow-svgrepo-com.svg" alt="" id="down" class="center">
 <div class="space2"></div>
 <div class="text-left container mx-auto md:px-40 md:py-30 px-10 py-10">
+  <div class="text-xl block px-10 py-10 bg-white border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-600"><p>London Healthcare Insights (LHI) is a nonprofit student consultancy focusing on the healthcare and pharmaceutical sector. Our mission is to add insight and value to our clients in the healthcare sector through strategic business development advice. Simultaneously, we provide an opportunity for students, particularly those studying life sciences, to gain real-world experience.</p></div>
+  <div class="space"></div>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-20 text-white">
-    <div><p class="font-semibold text-2xl">Pioneering.</p>
-      <p>GBSH SC is the world's first student consultancy dedicated to the healthcare and life sciences sector. Founded at UCL East with UCL GBSH, the first business school for health, we are at the forefront of our mission.</p>
+    <div class="block px-10 py-10 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"><p class="font-semibold text-2xl">Pioneering.</p>
+      <p>London Healthcare Insights (LHI) is the world's first student consultancy dedicated to the healthcare and pharmaceutical sector. Based in Bloomsbury, we're surrounded by top universities and the UCL GBSH - the world's first business school for health.</p>
     </div>
-    <div><p class="font-semibold text-2xl">Efficient.</p>
-      <p>We recruit students from top UK universities who have demonstrated expertise and interest within the area of the project they apply to. Our clients can rely on our promise to deliver.</p>
+    <div class="block px-10 py-10 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"><p class="font-semibold text-2xl">Reliable.</p>
+      <p>We recruit students from top UK universities who have demonstrated expertise and interest within the area of the project they apply to. Our clients can rely on our commitment to deliver with enthusiasm.</p>
     </div>
-    <div><p class="font-semibold text-2xl">Empowering.</p>
-      <p>We are partnered with multiple university societies to deliver educational events to students across London. We uniquely enable them to take part in specialist projects and discover the sector.</p>
+    <div class="block px-10 py-10 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"><p class="font-semibold text-2xl">Empowering.</p>
+      <p>We work with multiple university societies to enable students to learn and gain practical experience. Through events, market research, and projects, we cater to students at all levels of experience.</p>
     </div>
-    <div><p class="font-semibold text-2xl">Free.</p>
-      <p>We offer pro-bono consulting projects to clients and free events to students. Nobody should have to pay to be part of this student body, and nobody should have to pay to support it.</p>
+    <div class="block px-10 py-10 max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"><p class="font-semibold text-2xl">Free.</p>
+      <p>We offer consulting services to clients at no cost. Supporting and participating in this initiative should be accessible and easy for all parties.</p>
     </div>
   </div>
 </div>
 <div class="space"></div>
 <div class="text-center">
-  <button class="text-center bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4">
-    <a href="contact.html" class="">Work with us</a>
+  <button class="text-center bg-gray-500 hover:bg-gray-700 text-black font-bold py-2 px-4">
+    <a href="projects.html" class="">Work with us</a>
   </button>
 </div>
+
 <div class="space"></div>
  <script src="script.js"></script>
+ <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 </body>
 </html>

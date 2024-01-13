@@ -5,59 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
-
-
-<nav class="bg-white border-gray-200 dark:bg-gray-900 navbar">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span class="self-center text-2xl md:dark:hover:text-blue-500 whitespace-nowrap dark:text-white">GBSH SC</span>
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
-            <a href="index.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">HOME</a>
-          </li>
-          <li>
-            <a href="about.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT</a>
-          </li>
-          <li>
-            <a href="projects.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PROJECTS</a>
-          </li>
-          <li>
-            <a href="education.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">EDUCATION</a>
-          </li>
-          <li>
-            <a href="contact.html" class="font-semibold block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT</a>
-          </li>
-        </ul>
+<div id="nav-placeholder"></div>
+<div class="text-center container mx-auto px-30 py-40">
+<p class="text-white font-semibold responsive ">COMING SOON</p>
+<!-- <div class="text-left container mx-auto md:px-40 md:py-30 px-10 py-10">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-20 text-white">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="img/bg.jpg" alt="Image Alt Text">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">...</div>
+        <p class="text-gray-700 text-base">
+          COMING SOON
+        </p>
       </div>
     </div>
-</nav>
-<div class="text-center container mx-auto px-30 py-40">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="img/bg.jpg" alt="Image Alt Text">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">...</div>
+        <p class="text-gray-700 text-base">
+          COMING SOON
+        </p>
+      </div>
+    </div>
+  </div>
+</div> -->
 </div>
-<div class="text-left container mx-auto md:px-40 md:py-30 px-10 py-10">
-  <p class="text-white responsive">Events</p>
-  <p class="text-white">We are partnered with the following societies to run events across London:</p>
-  <li>UCL Healthcare Management & Politics Society</li>
-  <li>KCL Life Sciences Consulting & Careers Society</li>
-  <li>LSE Health Society</li>
-  <li>QMUL</li>
-</div>
-<div class="space"></div>
-<div class="text-center">
-  <button class="text-center bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4">
-    <a href="#" class="">Work with us</a>
-  </button>
-</div>
-<div class="space"></div>
  <script src="script.js"></script>
+ <script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+</script>
 </body>
 </html>

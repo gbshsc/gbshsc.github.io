@@ -12,9 +12,26 @@
         ) - window.innerHeight;
 
         // Calculate the scroll percentage
-        var scrollPercentage = (scrollPosition / maxScrollHeight * 0.5) ** 0.3;
+        var scrollPercentage = (scrollPosition / maxScrollHeight * 0.2) ** 0.5;
 
         // Set the opacity of the overlay based on the scroll percentage
         overlay.style.opacity = scrollPercentage;
     });
 })();
+
+
+$(function(){
+    $("#nav-placeholder").load("nav.html");
+  });
+
+const toggleButton = document.getElementById('toggleButton');
+const sideMenu = document.getElementById('sideMenu');
+const closeButton = document.getElementById('closeButton');
+
+toggleButton.addEventListener('click', () => {
+sideMenu.classList.toggle('hidden');
+});
+
+closeButton.addEventListener('click', () => {
+sideMenu.classList.add('hidden');
+});
