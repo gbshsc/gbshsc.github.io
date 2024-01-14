@@ -1,10 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Baskerville;
     color: #fff; /* Text color */
-    background-image: url("./img/bg.jpg");
-    /* background-color: gray; */
+    /* background-image: url("./img/bg.jpg"); */
+    background-color: #10402f;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -42,12 +47,18 @@ body {
 
 .space3 { margin-top: 0px; } 
 
+.lhi { height: 4rem;
+  object-fit: cover;}
+
 @media only screen and (max-width: 800px) {
     .responsive {
         font-size:6vw;
     }
 
-  .space3 { margin-top: 100px; } 
+  .space3 { margin-top: 100px; }
+
+  .lhi { height: 15rem;
+    object-fit: cover;}
 
 
 }
@@ -55,11 +66,6 @@ body {
 .space2 { margin-top: 500px; }
 
 
-.lhi1 { height: 12rem;
-  object-fit: cover;}
-
-.lhi2 { height: 4rem;
-  object-fit: cover;}
 
 .navbar {
     overflow: hidden;
