@@ -12,7 +12,7 @@
         ) - window.innerHeight;
 
         // Calculate the scroll percentage
-        var scrollPercentage = (scrollPosition / maxScrollHeight * 0.2) ** 0.5;
+        var scrollPercentage = (scrollPosition / maxScrollHeight * 0.3) ** 0.5;
 
         // Set the opacity of the overlay based on the scroll percentage
         overlay.style.opacity = scrollPercentage;

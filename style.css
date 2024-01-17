@@ -9,7 +9,7 @@ body {
     font-family: Baskerville;
     color: #fff; /* Text color */
     /* background-image: url("./img/bg.jpg"); */
-    background-color: #10402f;
+    /* background-color: #10402f; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -17,6 +17,23 @@ body {
     position: relative; /* Ensure body is positioned for z-index to work */
 }
 
+.backg {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(img/background.jpg);
+  position: fixed;
+  z-index: -1;
+}
+.content{
+  position: absolute;
+  margin-top: 5rem;
+  left: 50%; 
+  transform: translateX(-50%);
+  width: 80%;
+  z-index: 2;
+}
 .overlay {
     position: fixed;
     top: 0;
@@ -25,7 +42,7 @@ body {
     height: 100%;
     background: #000; /* Dark color for the overlay */
     opacity: 0; /* Initial opacity */
-    z-index: -1; /* Higher z-index to appear on top of the body content */
+    z-index: 0; /* Higher z-index to appear on top of the body content */
     pointer-events: none; /* Allow interactions with underlying elements */
 }
 
