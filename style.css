@@ -14,6 +14,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: right;
+    background-color: #000;
     position: relative; /* Ensure body is positioned for z-index to work */
 }
 
@@ -22,7 +23,7 @@ body {
   background-position: center;
   height: 100vh;
   width: 100vw;
-  background-image: url(img/background.jpg);
+  background-image: url(img/bg-brain.png);
   position: fixed;
   z-index: -1;
 }
@@ -51,7 +52,7 @@ body {
     filter: invert(1);
 }
 
-.center {
+.center1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -62,7 +63,7 @@ body {
     font-size:5vw;
 }
 
-.space3 { margin-top: 0px; } 
+.space3 { margin: 0px; } 
 
 .lhi { height: 4rem;
   object-fit: cover;}
@@ -72,29 +73,43 @@ body {
 }
 
 .same-w {
-    width: 500px;
+    width: 700px;
   }
 
-@media only screen and (max-width: 800px) {
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media only screen and (max-width: 822px) {
     .responsive {
         font-size:6vw;
     }
 
-  .space3 { margin-top: 100px; }
+  .space3 { margin: 200px; }
 
   .lhi { height: 15rem;
     object-fit: cover;}
 
   .same-w {
         width: 100%;
-      }
-
-
-
+  }
+  .center {
+    margin-left: 0px;
+    width: 100%;
+  }
+      
 }
+
+#rec {
+  max-width: 700px;
+}
+
+
 .space { margin-top: 100px; }
 .space2 { margin-top: 500px; }
-
 
 
 .navbar {
