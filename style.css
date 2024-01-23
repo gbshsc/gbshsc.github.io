@@ -23,7 +23,7 @@ body {
   background-position: center;
   height: 100vh;
   width: 100vw;
-  background-image: url(img/bg-brain.png);
+  background-image: url(img/brain.jpg);
   position: fixed;
   z-index: -1;
 }
@@ -63,10 +63,14 @@ body {
     font-size:5vw;
 }
 
-.space3 { margin: 0px; } 
 
 .lhi { height: 4rem;
   object-fit: cover;}
+
+.right-align {
+  margin-right: 1%;
+  margin-left: auto;
+}
 
 .same-h {
   height: 250px;
@@ -75,6 +79,11 @@ body {
 .same-w {
     width: 700px;
   }
+
+.space1 {
+  margin-top: 0px;
+}
+.space3 { margin: 0px; } 
 
 .center {
   display: block;
@@ -89,6 +98,8 @@ body {
     }
 
   .space3 { margin: 200px; }
+
+  .space1 { margin-top: 120px;}
 
   .lhi { height: 15rem;
     object-fit: cover;}
