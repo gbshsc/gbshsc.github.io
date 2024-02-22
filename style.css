@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: Baskerville;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #fff; /* Text color */
     /* background-image: url("./img/bg.jpg"); */
     /* background-color: #10402f; */
@@ -96,13 +96,13 @@ body {
     .responsive {
         font-size:6vw;
     }
-
+/* 
   .space3 { margin: 200px; }
 
   .space1 { margin-top: 120px;}
 
   .lhi { height: 15rem;
-    object-fit: cover;}
+    object-fit: cover;} */
 
   .same-w {
         width: 100%;
