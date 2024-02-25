@@ -41,7 +41,7 @@ body {
   z-index: 2;
 }
 .consult {
-  background-image: url(img/lhilbg.png); background-color: white;
+  background-image: url(img/lhilbgs.png); background-color: white;
 }
 .overlay {
     position: fixed;
