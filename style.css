@@ -181,3 +181,9 @@ body {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid rgb(56, 56, 56);  /* creates padding around scroll thumb */
   }
+
+.top {
+
+  overflow-y: scroll;
+  opacity: 0.2;
+}
