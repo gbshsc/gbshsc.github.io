@@ -306,6 +306,15 @@ html,body{max-width:100%;overflow-x:clip}
 }
 @media(prefers-reduced-motion:reduce){.poster-trend,.poster-bars rect,.helix-entry-hint:after{animation:none!important}.poster-trend{stroke-dashoffset:0}.project-navigation{scroll-behavior:auto}}
 @media print{#helix-layer,.helix-entry,.helix-outro{display:none!important}.project-navigation{display:none}.project-panel{display:block!important}}
+
+/* V3: a shorter, text-safe DNA flythrough that clears before client content. */
+.helix-entry{height:68vh;min-height:350px}
+@media(max-width:700px){.helix-entry{height:54vh;min-height:290px}}
+/* The analyst editorial poster accommodates an accurate six-category legend. */
+.poster-headline{font-size:clamp(24px,2.6vw,37px);line-height:1.13;letter-spacing:-.049em;max-width:470px}
+.poster-topics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.poster-topics span{display:flex;align-items:center;min-width:0;justify-content:center;text-align:center;line-height:1.3;white-space:normal;min-height:33px;padding:7px 6px}
+@media(max-width:700px){.poster-headline{font-size:clamp(25px,7vw,37px)}.poster-topics{grid-template-columns:repeat(2,minmax(0,1fr))}.poster-topics span{font-size:7px}}
 </style>
 </head>
 <body>
@@ -326,9 +335,9 @@ html,body{max-width:100%;overflow-x:clip}
 <div class="team reveal" style="--delay:90ms"><div class="team-heading"><h3>The project team</h3><span>Client contact + LHI support</span></div><div class="team-map"><svg aria-hidden="true" class="team-lines" preserveaspectratio="none" viewbox="0 0 500 342"><path d="M250 73V96H112V121M250 96H388V121M112 210V229H250V254M388 210V229H250"></path><circle cx="250" cy="96" fill="#9bb685" r="3"></circle><circle cx="250" cy="229" fill="#9bb685" r="3"></circle></svg><div class="team-node client"><h4>Client</h4><p>Brief, context and feedback</p></div><div class="team-node manager"><h4>1 project manager</h4><p>Leads research and day-to-day client contact</p></div><div class="team-node exec"><h4>1 LHI client executive</h4><p>Supports the team and the engagement</p></div><div class="team-node consultants"><div aria-hidden="true" class="people"><svg class="person" viewbox="0 0 20 24"><circle cx="10" cy="6" r="4"></circle><path d="M3 23v-5a7 7 0 0 1 14 0v5Z"></path></svg><svg class="person" viewbox="0 0 20 24"><circle cx="10" cy="6" r="4"></circle><path d="M3 23v-5a7 7 0 0 1 14 0v5Z"></path></svg><svg class="person" viewbox="0 0 20 24"><circle cx="10" cy="6" r="4"></circle><path d="M3 23v-5a7 7 0 0 1 14 0v5Z"></path></svg><svg class="person" viewbox="0 0 20 24"><circle cx="10" cy="6" r="4"></circle><path d="M3 23v-5a7 7 0 0 1 14 0v5Z"></path></svg><svg class="person" viewbox="0 0 20 24"><circle cx="10" cy="6" r="4"></circle><path d="M3 23v-5a7 7 0 0 1 14 0v5Z"></path></svg></div><h4>3–5 consultants</h4><p>Research, analysis, and deliverables</p></div></div><p class="team-note">The project manager coordinates the team’s work and client updates.</p></div>
 </div><div class="timeline"><article class="timeline-step reveal"><span class="step-number">01</span><div><span class="when">At the start</span><h3>Agree the scope</h3><p>Meet the team, share company materials, and agree the research questions and deliverables.</p></div></article><article class="timeline-step reveal" style="--delay:80ms"><span class="step-number">02</span><div><span class="when">During the project</span><h3>Research and checkpoints</h3><p>Develop the analysis and review progress with the client, adjusting the work where needed.</p></div></article><article class="timeline-step reveal" style="--delay:160ms"><span class="step-number">03</span><div><span class="when">At completion</span><h3>Present the findings</h3><p>Deliver the agreed outputs, discuss the findings and receive client feedback.</p></div></article></div></div></section>
 <section aria-labelledby="monitor-title" class="monitor-section" id="monitor"><div class="wrap monitor-grid"><div class="monitor-copy reveal"><p class="label">Market analysis</p><h2 id="monitor-title">Market Monitor</h2><p class="body">This monthly, student-produced publication tracks drug approvals, regulatory changes, stock moves, clinical trials, M&amp;A activity, and other developments across healthcare and life sciences. Published since January 2024, it helps build commercial awareness and supports interview preparation.</p><p class="body">Read the published monitors on Instagram and LinkedIn.</p><div class="monitor-links"><a class="link" href="https://www.instagram.com/londonhealthcareinsights/" rel="noopener noreferrer" target="_blank">Instagram <span class="arr">↗</span></a><a class="link" href="https://www.linkedin.com/company/londonhealthcareinsights/" rel="noopener noreferrer" target="_blank">LinkedIn <span class="arr">↗</span></a></div></div><div aria-hidden="true" class="monitor-art reveal" style="--delay:90ms"><div class="monitor-poster-head"><span class="poster-kicker">LHI <b> / </b> RESEARCH SERIES</span><span class="poster-issue">MONTHLY</span></div>
-<div class="poster-headline">The healthcare<br/><em>pulse.</em></div>
+<div class="poster-headline">Prepared by a team<br/><em>of analysts.</em></div>
 <div class="poster-visual"><div class="poster-y-label">SECTOR SIGNALS</div><svg aria-label="Illustrative healthcare market signal chart" role="img" viewbox="0 0 550 220"><defs><lineargradient id="posterglow" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#80cdb7" stop-opacity=".45"></stop><stop offset="1" stop-color="#80cdb7" stop-opacity="0"></stop></lineargradient><lineargradient id="posterline" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#66afa8"></stop><stop offset=".55" stop-color="#88aecd"></stop><stop offset="1" stop-color="#b5a4cc"></stop></lineargradient></defs><g class="poster-gridlines" stroke="#c9e1de" stroke-width="1"><path d="M24 40H532M24 85H532M24 130H532M24 175H532" stroke-dasharray="3 7"></path></g><g class="poster-bars" fill="#c7e6de"><rect height="57" rx="4" width="22" x="47" y="119"></rect><rect height="85" rx="4" width="22" x="117" y="91"></rect><rect height="71" rx="4" width="22" x="187" y="105"></rect><rect height="111" rx="4" width="22" x="257" y="65"></rect><rect height="88" rx="4" width="22" x="327" y="88"></rect><rect height="119" rx="4" width="22" x="397" y="57"></rect><rect height="144" rx="4" width="22" x="467" y="32"></rect></g><path class="poster-area" d="M32 154C62 150 81 164 109 130S167 142 193 113S245 130 274 98S322 120 353 87S407 106 436 66S483 89 519 39V177H32Z" fill="url(#posterglow)"></path><path class="poster-trend" d="M32 154C62 150 81 164 109 130S167 142 193 113S245 130 274 98S322 120 353 87S407 106 436 66S483 89 519 39" fill="none" stroke="url(#posterline)" stroke-linecap="round" stroke-width="4"></path><g fill="#fff" stroke="#639d96" stroke-width="3"><circle cx="109" cy="130" r="6"></circle><circle cx="274" cy="98" r="6"></circle><circle cx="436" cy="66" r="6"></circle><circle cx="519" cy="39" r="6"></circle></g></svg><span class="poster-illustrative">Illustrative visual</span></div>
-<div class="poster-topics"><span>01   APPROVALS</span><span>02   TRIALS</span><span>03   M&amp;A</span><span>04   MARKETS</span></div></div></div></section>
+<div class="poster-topics"><span>01   DRUG APPROVALS</span><span>02   REGULATORY</span><span>03   STOCK MOVES</span><span>04   CLINICAL TRIALS</span><span>05   M&amp;A</span><span>06   MORE</span></div></div></div></section>
 <section aria-labelledby="events-title" class="events-section" id="events"><div class="wrap events-layout"><div><p class="label">Selected past events</p><h2 id="events-title">Events</h2><a class="link" href="https://linktr.ee/londonhealthcareinsights" rel="noopener noreferrer" target="_blank">Future events <span class="arr">↗</span></a></div><div class="events-list"><a class="event" href="https://londonhealthcareinsights.com/events.html" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 21V6l8-3 8 3v15M2 21h20M8 9h1m6 0h1M8 13h1m6 0h1"></path></svg><div><h3>Axiom Healthcare Strategies</h3><p>Case study and networking · 2024</p></div><span class="arr">↗</span></a><a class="event" href="https://www.linkedin.com/posts/londonhealthcareinsights_were-excited-to-announce-our-fireside-chat-activity-7310016308769705985-TVcb" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="11" rx="3" width="6" x="9" y="3"></rect><path d="M6 11a6 6 0 0 0 12 0M12 18v4M8 22h8"></path></svg><div><h3>Dr Zahid Moneer</h3><p>Healthcare investment banking fireside chat · March 2025</p></div><span class="arr">↗</span></a><a class="event" href="https://londonhealthcareinsights.com/events.html" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="7" r="3"></circle><path d="M7 21v-3a5 5 0 0 1 10 0v3M3 21v-3m18 3v-3"></path></svg><div><h3>Life science consulting panel</h3><p>Industry Q&amp;A · March 2024</p></div><span class="arr">↗</span></a><a class="event" href="https://www.instagram.com/londonhealthcareinsights/" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 3h16v14H4zM8 22l4-5 4 5M8 12l4-5 4 2"></path></svg><div><h3>LHI case workshop</h3><p>Case preparation and practice</p></div><span class="arr">↗</span></a></div></div></section>
 <section aria-labelledby="join-title" class="join-section" id="join"><div class="wrap"><div class="join-grid"><div class="reveal"><p class="label">Recruitment</p><h2 id="join-title">Join LHI</h2></div><p class="body reveal" style="--delay:90ms">Consulting and market analyst opportunities are announced on Instagram and LinkedIn. Application links are shared through our Linktree.</p></div><div class="join-flow"><div class="join-step reveal"><span class="n">01</span><div><h3>Applications open</h3><p>Follow our social channels for dates and available roles.</p></div></div><div class="join-step reveal" style="--delay:60ms"><span class="n">02</span><div><h3>Apply via Linktree</h3><p>Submit your application when a recruitment cycle opens.</p></div></div><div class="join-step reveal" style="--delay:120ms"><span class="n">03</span><div><h3>CV review</h3><p>Relevant experience, sector interest and motivation.</p></div></div><div class="join-step reveal" style="--delay:180ms"><span class="n">04</span><div><h3>Case task</h3><p>Research, analysis and problem-solving skills.</p><span class="interview">Project managers → Interview</span></div></div><div class="join-step reveal" style="--delay:240ms"><span class="n">05</span><div><h3>Join a team</h3><p>Successful applicants are matched to available roles.</p></div></div></div><div class="join-actions reveal"><p>Applications are welcomed from students across UK universities. Requirements vary by role and project.</p><a class="button white" href="https://linktr.ee/londonhealthcareinsights" rel="noopener noreferrer" target="_blank">Explore opportunities <span class="arr">↗</span></a></div><footer><div class="footer"><a class="brand" href="#about"><img alt="LHI" height="32" src="data:image/png;base64,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" width="32"/><span>London Healthcare<br/>Insights</span></a><div class="socials"><a href="https://www.instagram.com/londonhealthcareinsights/" rel="noopener noreferrer" target="_blank">Instagram ↗</a><a href="https://www.linkedin.com/company/londonhealthcareinsights/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="https://linktr.ee/londonhealthcareinsights" rel="noopener noreferrer" target="_blank">Linktree ↗</a></div></div><div class="footer-end"><details class="source"><summary>London Healthcare Insights · Sources</summary><p>Project and network information: LHI Client Information Deck, 2026, and the <a href="https://londonhealthcareinsights.com" rel="noopener noreferrer" target="_blank">existing LHI website</a>. Client names, graduate destinations, and team structure supplied by LHI. Organisation profiles link to their sources. Sector tags are broad groupings. Logos identify the organisations shown. Compiled October 2026.</p></details><a class="top" href="#about">Back to top ↑</a></div></footer></div></section><section aria-label="Closing animated DNA helix" class="helix-outro" id="helix-outro"><div class="helix-outro-content"><p class="outro-eyebrow">A NEW PERSPECTIVE</p><h2>Keep exploring.</h2><a class="outro-top" href="#about">Back to the beginning ↗</a></div></section>
 </main>
@@ -338,7 +347,7 @@ const PROJECTS=[{"title": "Competitive benchmarking", "description": "Compare co
 const root=document.documentElement,reduced=matchMedia('(prefers-reduced-motion: reduce)');
 let motion=!reduced.matches,pageActive=!document.hidden;
 function updateMotion(){motion=!reduced.matches;root.dataset.motion=motion?'on':'off';measureClients();scheduleScroll()}
-reduced.addEventListener('change',updateMotion);
+if(typeof reduced.addEventListener==='function')reduced.addEventListener('change',updateMotion);else if(typeof reduced.addListener==='function')reduced.addListener(updateMotion);
 if('IntersectionObserver'in window){root.classList.add('js');const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -15px 0px'});document.querySelectorAll('.reveal').forEach(x=>observer.observe(x))}
 const nav=document.querySelector('.nav'),menu=document.querySelector('.menu');function closeMenu(focus=false){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open menu');if(focus)menu.focus()}
 menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu')});document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>closeMenu()));document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open'))closeMenu(true)});document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!nav.contains(e.target))closeMenu()});
@@ -386,19 +395,20 @@ document.querySelectorAll('.client-track').forEach(track=>{
   const repeat=track.querySelector('.client-set[aria-hidden]');
   if(original&&repeat){repeat.innerHTML=original.innerHTML;repeat.removeAttribute('inert');repeat.querySelectorAll('a').forEach(a=>a.tabIndex=-1)}
 });
-clientSection.classList.add('running');measureClients();document.fonts.ready.then(()=>{measureClients();drawTeam()});
+clientSection.classList.add('running');measureClients();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{measureClients();drawTeam()});
 function drawTeam(){const map=document.querySelector('.team-map'),svg=map.querySelector('svg'),pos=cls=>{const n=map.querySelector('.'+cls);return{x:n.offsetLeft+n.offsetWidth/2,top:n.offsetTop,bottom:n.offsetTop+n.offsetHeight}};const c=pos('client'),m=pos('manager'),e=pos('exec'),a=pos('consultants'),upper=(c.bottom+Math.min(m.top,e.top))/2,lower=(Math.max(m.bottom,e.bottom)+a.top)/2;svg.setAttribute('viewBox',`0 0 ${map.clientWidth} ${map.clientHeight}`);svg.innerHTML=`<path d="M${c.x} ${c.bottom}V${upper}H${m.x}V${m.top}M${c.x} ${upper}H${e.x}V${e.top}M${m.x} ${m.bottom}V${lower}H${a.x}V${a.top}M${e.x} ${e.bottom}V${lower}H${a.x}"/><circle cx="${c.x}" cy="${upper}" r="3" fill="#9bb685"/><circle cx="${a.x}" cy="${lower}" r="3" fill="#9bb685"/>`}
-// Single-row project contents bar. Wall-clock timing does not depend on display refresh rate,
-// IntersectionObserver support, or the user's reduced-motion preference.
+// Project explorer: begin from 01 when the user reaches this section, never at page load.
+// Driven by elapsed wall-clock time instead of CSS animations, refresh rate, or observer callbacks.
+const projectSection=document.getElementById('project-types');
 const projectButtons=[...document.querySelectorAll('.project-navigation .project-button')];
 const projectCountdown=document.getElementById('project-countdown');
 const projectIndexLabel=document.getElementById('project-index');
 const projectDuration=6000;
-let projectIndex=0,projectStart=Date.now();
+let projectIndex=0,projectStart=0,projectPlaying=false;
 function selectProject(i, resetClock=true){
   projectIndex=(i+PROJECTS.length)%PROJECTS.length;
   const p=PROJECTS[projectIndex];
-  projectButtons.forEach((b,j)=>{b.setAttribute('aria-pressed',String(j===projectIndex));b.setAttribute('aria-current',j===projectIndex?'step':'false');b.style.setProperty('--tab-progress',j===projectIndex?'0':'0')});
+  projectButtons.forEach((b,j)=>{b.setAttribute('aria-pressed',String(j===projectIndex));b.setAttribute('aria-current',j===projectIndex?'step':'false');b.style.setProperty('--tab-progress','0')});
   document.getElementById('project-title').textContent=p.title;
   document.getElementById('project-description').textContent=p.description;
   document.getElementById('project-output').textContent=p.output;
@@ -408,26 +418,60 @@ function selectProject(i, resetClock=true){
   copy.classList.remove('swap');void copy.offsetWidth;copy.classList.add('swap');
   if(resetClock)projectStart=Date.now();
   if(projectCountdown)projectCountdown.textContent='6';
-  // Scroll only the slim contents rail, never the document itself.
   const active=projectButtons[projectIndex],rail=active.parentElement;
   if(rail.scrollWidth>rail.clientWidth){
-    const desired=active.offsetLeft+active.offsetWidth/2-rail.clientWidth/2;
-    if('scrollTo' in rail)rail.scrollTo({left:Math.max(0,desired),behavior:motion?'smooth':'auto'});
+    const desired=Math.max(0,active.offsetLeft+active.offsetWidth/2-rail.clientWidth/2);
+    if(typeof rail.scrollTo==='function'){
+      try{rail.scrollTo({left:desired,behavior:motion?'smooth':'auto'})}catch(_){rail.scrollLeft=desired}
+    }else rail.scrollLeft=desired;
   }
 }
-projectButtons.forEach((b,i)=>b.addEventListener('click',()=>selectProject(i)));
+// Viewport geometry works even in browsers that throttle or do not support IntersectionObserver.
+function projectIsInView(){
+  const r=projectSection.getBoundingClientRect();
+  return r.top<innerHeight*.82&&r.bottom>innerHeight*.18;
+}
+function syncProjectVisibility(){
+  const visible=!document.hidden&&projectIsInView();
+  if(visible&&!projectPlaying){
+    projectPlaying=true;
+    selectProject(0,false);
+    projectStart=Date.now();
+    projectButtons[0].style.setProperty('--tab-progress','0');
+  }else if(!visible&&projectPlaying){
+    projectPlaying=false;
+    selectProject(0,false);
+    projectStart=0;
+  }
+}
+projectButtons.forEach((b,i)=>b.addEventListener('click',()=>{
+  selectProject(i,true);
+  projectPlaying=projectIsInView()&&!document.hidden;
+}));
 function tickProject(){
-  if(document.hidden)return;
-  let elapsed=Date.now()-projectStart;
-  if(elapsed>=projectDuration){selectProject(projectIndex+1);elapsed=0}
-  const fraction=Math.max(0,Math.min(1,elapsed/projectDuration));
-  projectButtons[projectIndex].style.setProperty('--tab-progress',fraction.toFixed(4));
+  syncProjectVisibility();
+  if(!projectPlaying)return;
+  const now=Date.now();
+  let elapsed=Math.max(0,now-projectStart);
+  if(elapsed>=projectDuration){
+    const steps=Math.floor(elapsed/projectDuration);
+    selectProject(projectIndex+steps,false);
+    projectStart+=steps*projectDuration;
+    elapsed=Math.max(0,now-projectStart);
+  }
+  projectButtons[projectIndex].style.setProperty('--tab-progress',String(Math.min(1,elapsed/projectDuration)));
   if(projectCountdown)projectCountdown.textContent=String(Math.max(1,Math.ceil((projectDuration-elapsed)/1000)));
 }
-// setInterval remains functional at 30 Hz, 60 Hz, 120 Hz, and 144 Hz; tabs resume cleanly.
-const projectClock=setInterval(tickProject,80);
-document.addEventListener('visibilitychange',()=>{if(!document.hidden){projectStart=Date.now();tickProject()}});
-selectProject(0);
+// Timer updates are independent of device refresh rate and CSS animation preferences.
+const projectClock=setInterval(tickProject,120);
+addEventListener('scroll',syncProjectVisibility,{passive:true});
+addEventListener('resize',syncProjectVisibility,{passive:true});
+document.addEventListener('visibilitychange',()=>{
+  if(!document.hidden&&projectPlaying){projectStart=Date.now()}
+  syncProjectVisibility();
+});
+selectProject(0,false);
+syncProjectVisibility();
 
 // Scroll-coupled 3D DNA sequence. The camera orbits a real projected helix and flies
 // along its axis, then returns from the other end during the closing section.
@@ -453,13 +497,35 @@ function resizeHelix(){
   if(helixActive)paintHelix(performance.now());
 }
 function updateHelix(y=scrollY){
-  const topEnd=Math.max(1,entryGate.offsetTop+entryGate.offsetHeight-innerHeight*.25);
-  const startOutro=outroGate.offsetTop-innerHeight*.65;
-  const endOutro=Math.max(startOutro+1,outroGate.offsetTop+outroGate.offsetHeight-innerHeight);
+  // Finish the entrance BEFORE the clients heading can enter the viewport.
+  // The portal is visible only across the final part of the hero and entry scene.
+  const beginEntry=Math.max(0,entryGate.offsetTop-innerHeight*.63);
+  const endEntry=Math.max(beginEntry+60,entryGate.offsetTop+entryGate.offsetHeight-innerHeight*.92);
+  const startOutro=outroGate.offsetTop-innerHeight*.22;
+  const endOutro=Math.max(startOutro+60,outroGate.offsetTop+outroGate.offsetHeight-innerHeight);
   let active=false,phase=0,mode='entry';
-  if(y<topEnd){active=true;phase=clamp(y/topEnd)}
-  else if(y>=startOutro){active=true;mode='outro';phase=clamp((y-startOutro)/(endOutro-startOutro))}
+  if(y>=beginEntry&&y<endEntry){
+    phase=clamp((y-beginEntry)/(endEntry-beginEntry));
+    active=phase<.94;
+  }else if(y>=startOutro){
+    active=true;mode='outro';phase=clamp((y-startOutro)/(endOutro-startOutro));
+  }
   helixMode=mode;helixPhase=phase;helixActive=active;
+  // Confine the 3D geometry to its own cinematic panel so it cannot cover
+  // headings, hero copy, client logos, or the closing call to action.
+  if(active){
+    const r=(mode==='entry'?entryGate:outroGate).getBoundingClientRect();
+    const top=Math.round(clamp(r.top,0,innerHeight));
+    const bottom=Math.round(clamp(innerHeight-r.bottom,0,innerHeight));
+    const mask=`inset(${top}px 0px ${bottom}px 0px)`;
+    helixLayer.style.clipPath=mask;
+    helixLayer.style.webkitClipPath=mask;
+    const fade=Math.min(54,Math.max(12,(innerHeight-top-bottom)*.16));
+    const end=innerHeight-bottom;
+    const colourMask=`linear-gradient(to bottom,transparent ${top}px,#000 ${Math.min(top+fade,end)}px,#000 ${Math.max(top+fade,end-fade)}px,transparent ${end}px)`;
+    helixLayer.style.maskImage=colourMask;
+    helixLayer.style.webkitMaskImage=colourMask;
+  }
   helixLayer.classList.toggle('helix-active',active);
   if(active)paintHelix(performance.now());else hx.clearRect(0,0,helixW,helixH);
   if(active&&!helixFrame&&!reduced.matches&&!document.hidden)helixFrame=requestAnimationFrame(helixLoop);
@@ -496,7 +562,7 @@ function paintHelix(time){
   const geometry=[];
   function project(pt){
     const rel=pt.map((v,i)=>v-view.eye[i]);const d=dot(rel,forward);
-    if(d<.6)return null;
+    if(d<2.5)return null;
     const scale=focal/d;
     return {x:centerX+dot(rel,right)*scale,y:centerY-dot(rel,up)*scale,d,s:scale};
   }
@@ -511,17 +577,19 @@ function paintHelix(time){
     const a=geometry[i][side],b=geometry[i+1][side];
     if(a&&b)primitives.push({kind:'rail',a,b,depth:(a.d+b.d)/2,side});
   }
-  for(let i=0;i<=N;i+=5){const [a,b]=geometry[i];if(a&&b)primitives.push({kind:'rung',a,b,depth:(a.d+b.d)/2});}
+  const rungVisibility=1-ease((Math.abs(forward[1])-.34)/.30);
+  for(let i=0;i<=N;i+=5){const [a,b]=geometry[i];if(a&&b&&rungVisibility>.06&&Math.hypot(a.x-b.x,a.y-b.y)<Math.min(helixW,helixH)*.48)primitives.push({kind:'rung',a,b,depth:(a.d+b.d)/2});}
   primitives.sort((a,b)=>b.depth-a.depth);
-  let alpha=helixMode==='entry'?1-ease((p-.66)/.19):ease((helixPhase-.03)/.26);
+  let alpha=helixMode==='entry'?1-ease((p-.54)/.33):ease((helixPhase-.03)/.26);
   if(compact&&p<.25)alpha*=.48;
   hx.globalAlpha=alpha;
   for(const v of primitives){
     const scale=clamp(22/v.depth,.32,2.6);
+    if(Math.hypot(v.a.x-v.b.x,v.a.y-v.b.y)>Math.max(helixW,helixH)*.36)continue;
     hx.beginPath();hx.moveTo(v.a.x,v.a.y);hx.lineTo(v.b.x,v.b.y);
     if(v.kind==='rung'){
-      hx.strokeStyle=`rgba(115,173,151,${clamp(.11+.22*scale,.12,.45)})`;
-      hx.lineWidth=clamp(.55*scale,.5,2.1);
+      hx.strokeStyle=`rgba(115,173,151,${clamp((.11+.16*scale)*rungVisibility,.03,.3)})`;
+      hx.lineWidth=clamp(.5*scale,.45,1.3);
     }else{
       hx.lineWidth=clamp(2.2*scale,1,6.4);
       hx.strokeStyle=v.side===0?`rgba(54,127,104,${clamp(.32+.33*scale,.35,.91)})`:`rgba(139,155,205,${clamp(.25+.39*scale,.37,.93)})`;
@@ -554,7 +622,7 @@ function helixLoop(ts){
   if(ts-lastHelixPaint>32){paintHelix(ts);lastHelixPaint=ts}
   helixFrame=requestAnimationFrame(helixLoop);
 }
-document.addEventListener('visibilitychange',()=>{pageActive=!document.hidden;if(pageActive){projectStart=Date.now();updateHelix(scrollY)}});
+document.addEventListener('visibilitychange',()=>{pageActive=!document.hidden;if(pageActive)updateHelix(scrollY)});
 resizeHelix();updateMotion();updateHelix(scrollY);
 
 const extraRevealTargets=document.querySelectorAll('.university,.project-metrics,.team,.monitor-art,.events-layout,.join-step');
